@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizLab - Web Development Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app-container">
+
+        <!-- HEADER -->
+        <header class="quiz-header">
+            <div class="brand">
+                <div class="brand-icon">Q</div>
+
+                <div>
+                    <h1>QuizLab</h1>
+                    <p>Web Development Quiz</p>
+                </div>
+            </div>
+
+            <button id="themeBtn" class="theme-btn" type="button" aria-label="Toggle dark mode">
+                ☾
+            </button>
+        </header>
+
+
+        <!-- QUIZ CONTENT -->
+        <section class="quiz-content">
+
+            <!-- QUIZ TOP -->
+            <div class="quiz-top">
+
+                <div class="question-number">
+                    <span>QUESTION</span>
+                    <strong id="progress">01 / 08</strong>
+                </div>
+
+                <div class="score-box">
+                    <span>SCORE</span>
+                    <strong id="score-display">0</strong>
+                </div>
+
+            </div>
+
+
+            <!-- PROGRESS -->
+            <div class="progress-wrapper">
+                <div class="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+            </div>
+
+
+            <!-- QUESTION -->
+            <div class="question-box">
+                <span class="question-label">WEB DEVELOPMENT</span>
+
+                <h2 id="question">
+                    Pertanyaan akan muncul di sini
+                </h2>
+            </div>
+
+
+            <!-- TIMER -->
+            <div class="timer">
+                <div class="timer-icon">◷</div>
+
+                <div>
+                    <span>Time remaining</span>
+                    <strong>
+                        <span id="timer">15</span> sec
+                    </strong>
+                </div>
+            </div>
+
+
+            <!-- OPTIONS -->
+            <div id="options" class="options-grid">
+                <!-- Pilihan jawaban dibuat melalui JavaScript -->
+            </div>
+
+
+            <!-- NEXT BUTTON -->
+            <button id="nextBtn" class="next-btn" type="button" hidden>
+                <span>Next Question</span>
+                <strong>→</strong>
+            </button>
+
+        </section>
+
+
+        <!-- RESULT -->
+        <section id="result" class="result hidden">
+
+            <div class="result-icon">✓</div>
+
+            <span class="result-label">QUIZ COMPLETED</span>
+
+            <h2>Great job!</h2>
+
+            <p class="result-description">
+                You have completed the Web Development Quiz.
+            </p>
+
+
+            <div class="result-score">
+                <span>Your Score</span>
+                <strong id="score">0/8 (0%)</strong>
+            </div>
+
+
+            <div class="high-score-box">
+                <span>HIGH SCORE</span>
+                <strong id="highScore">0%</strong>
+            </div>
+
+
+            <button id="restartBtn" class="restart-btn" type="button">
+                <span>↻</span>
+                Try Again
+            </button>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="quiz-footer">
+            <p>QuizLab • Learn. Think. Improve.</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
